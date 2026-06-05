@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RLW Development and Design | Premium Residential Renovations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#FFFBEB] text-[#78350F]">
+
+  <!-- NAV -->
+  <nav class="bg-black text-[#FFFBEB] sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl font-bold text-[#CA8A04]">RLW</span>
+        <div>
+          <span class="text-xl font-semibold">Development & Design</span>
+          <p class="text-xs text-[#FFFBEB]/70 -mt-1">SoCal Maintenance</p>
+        </div>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-[#CA8A04]">Meet the Contractor</a>
+        <a href="#projects" class="hover:text-[#CA8A04]">Projects</a>
+        <a href="#contact" class="hover:text-[#CA8A04]">Contact</a>
+      </div>
+      <a href="#contact" class="bg-[#CA8A04] hover:bg-[#FDE047] text-black px-6 py-3 rounded-lg font-semibold">Free Consultation</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://picsum.photos/id/1015/2000/1200')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="text-6xl md:text-7xl font-bold text-[#FFFBEB] tracking-tight mb-4">
+        Transforming Homes.<br><span class="text-[#CA8A04]">Elevating Lives.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-[#FFFBEB]/90 mb-8">Premium residential renovations • Southern California</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects" class="bg-[#CA8A04] hover:bg-[#FDE047] text-black px-10 py-4 rounded-lg font-semibold text-lg">View Our Work</a>
+        <a href="#contact" class="border-2 border-[#FFFBEB] hover:bg-white/10 text-[#FFFBEB] px-10 py-4 rounded-lg font-semibold text-lg">Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 text-[#78350F]">Meet the Contractor</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-lg leading-relaxed">RLW Development and Design, founded by Rachel L. Weiner, delivers ethical, high-quality residential renovations across Southern California.</div>
+        <div class="bg-[#78350F] text-[#FFFBEB] p-10 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-6">Our Commitment</h3>
+          <ul class="space-y-4">
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Timely execution</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Transparent pricing</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Premium craftsmanship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 bg-[#FFFBEB]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 text-[#78350F]">Recent Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="rounded-2xl overflow-hidden shadow-lg"><img src="https://picsum.photos/id/1015/800/600" class="w-full h-80 object-cover"><div class="p-6"><h4 class="font-semibold">Sherman Oaks House</h4></div></div>
+        <div class="rounded-2xl overflow-hidden shadow-lg"><img src="https://picsum.photos/id/133/800/600" class="w-full h-80 object-cover"><div class="p-6"><h4 class="font-semibold">Topanga 1st Floor Remodel</h4></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-black text-[#FFFBEB]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-8">Start Your Project</h2>
+      <a href="mailto:info@rlwdevelopmentanddesign.com" class="inline-block bg-[#CA8A04] hover:bg-[#FDE047] text-black px-12 py-5 rounded-lg font-semibold text-xl">Contact Us</a>
+      <p class="mt-8">Sherman Oaks, Los Angeles, CA</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#78350F] text-[#FFFBEB] py-12 text-sm">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p>© 2026 RLW Development and Design. Licensed General Contractor. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
