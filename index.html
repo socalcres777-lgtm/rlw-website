@@ -3,59 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RLW Development and Design</title>
+  <title>RLW Development and Design | Premium Residential Renovations</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+  </style>
 </head>
 <body class="bg-[#FFFBEB] text-[#78350F]">
-  <nav class="bg-black text-white sticky top-0 z-50">
+
+  <!-- NAV -->
+  <nav class="bg-black text-[#FFFBEB] sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <div class="flex items-center gap-3">
         <span class="text-3xl font-bold text-[#CA8A04]">RLW</span>
-        <div>Development & Design <span class="text-xs opacity-70">SoCal Maintenance</span></div>
+        <div>
+          <span class="text-xl font-semibold">Development & Design</span>
+          <p class="text-xs text-[#FFFBEB]/70 -mt-1">SoCal Maintenance</p>
+        </div>
       </div>
-      <div class="flex gap-8">
+      <div class="hidden md:flex gap-8 text-sm font-medium">
         <a href="#about" class="hover:text-[#CA8A04]">Meet the Contractor</a>
         <a href="#services" class="hover:text-[#CA8A04]">Services</a>
         <a href="#projects" class="hover:text-[#CA8A04]">Projects</a>
         <a href="#contact" class="hover:text-[#CA8A04]">Contact</a>
       </div>
-      <a href="#contact" class="bg-[#CA8A04] text-black px-6 py-3 rounded font-semibold">Free Consultation</a>
+      <a href="#contact" class="bg-[#CA8A04] hover:bg-[#FDE047] text-black px-6 py-3 rounded-lg font-semibold">Free Consultation</a>
     </div>
   </nav>
 
-  <section class="h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
-    <div class="absolute inset-0 bg-black/60"></div>
-    <div class="relative text-center text-white max-w-4xl px-6">
-      <h1 class="text-6xl font-bold mb-6">Transforming Homes.<br><span class="text-[#CA8A04]">Elevating Lives.</span></h1>
-      <p class="text-2xl mb-10">Premium residential renovations in Southern California</p>
-      <a href="#projects" class="bg-[#CA8A04] text-black px-10 py-4 rounded font-semibold text-xl">View Projects</a>
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://picsum.photos/id/1015/2000/1200')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="text-6xl md:text-7xl font-bold text-[#FFFBEB] tracking-tight mb-4">
+        Transforming Homes.<br><span class="text-[#CA8A04]">Elevating Lives.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-[#FFFBEB]/90 mb-8">Premium residential renovations • Southern California</p>
+      <a href="#projects" class="bg-[#CA8A04] hover:bg-[#FDE047] text-black px-10 py-4 rounded-lg font-semibold text-lg">View Our Work</a>
     </div>
   </section>
 
-  <section id="projects" class="py-24">
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">Recent Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="https://www.rlwdevelopmentanddesign.com/" class="block bg-white p-8 rounded-3xl shadow text-center">Topanga 1st Floor Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/hollyline-master-bath" class="block bg-white p-8 rounded-3xl shadow text-center">Hollyline Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/aetna-1st-floor-remodel" class="block bg-white p-8 rounded-3xl shadow text-center">Aetna Street Kitchen Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/sherman-oaks-house" class="block bg-white p-8 rounded-3xl shadow text-center">Sherman Oaks House</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/oxnard-master-bath" class="block bg-white p-8 rounded-3xl shadow text-center">Oxnard Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/iglesia-master-bath" class="block bg-white p-8 rounded-3xl shadow text-center">Iglesia Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/hesby-kitchen" class="block bg-white p-8 rounded-3xl shadow text-center">Hesby Kitchen</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/leonora-house-remodel" class="block bg-white p-8 rounded-3xl shadow text-center">Leonora House Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/radford-apartment" class="block bg-white p-8 rounded-3xl shadow text-center">Radford Apartment</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/apartment-renovations" class="block bg-white p-8 rounded-3xl shadow text-center">Apartment Renovations</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/reo-kitchen-gallery" class="block bg-white p-8 rounded-3xl shadow text-center">REO Kitchen Gallery</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/reo-bathroom-gallery" class="block bg-white p-8 rounded-3xl shadow text-center">REO Bathroom Gallery</a>
+      <h2 class="text-5xl font-bold text-center mb-12 text-[#78350F]">Meet the Contractor</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-lg leading-relaxed">
+          <p class="mb-6">Rachel L. Weiner is a licensed general contractor with extensive experience in high-end residential renovations across Southern California.</p>
+          <p>With a passion for quality craftsmanship and client satisfaction, she founded RLW Development and Design to deliver exceptional results on every project.</p>
+        </div>
+        <div class="bg-[#78350F] text-[#FFFBEB] p-10 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-6">Our Commitment</h3>
+          <ul class="space-y-4">
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Ethical & honest work</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Transparent pricing</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>Premium craftsmanship</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-[#CA8A04]"></i>On-time delivery</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services" class="py-24 bg-[#FFFBEB]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12 text-[#78350F]">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-2xl font-semibold mb-4 text-[#CA8A04]">Residential Renovations</h3>
+          <p>Kitchens, bathrooms, whole-home transformations and custom builds.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-2xl font-semibold mb-4 text-[#CA8A04]">SoCal Maintenance</h3>
+          <p>Ongoing property maintenance, repairs, and seasonal services.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h3 class="text-2xl font-semibold mb-4 text-[#CA8A04]">Interior Design</h3>
+          <p>Space planning, material selection, and full design consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 text-[#78350F]">Recent Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="https://www.rlwdevelopmentanddesign.com/" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Topanga 1st Floor Remodel</div><div class="p-8"><h3 class="font-semibold text-xl">Topanga 1st Floor Remodel</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/hollyline-master-bath" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Hollyline Master Bath</div><div class="p-8"><h3 class="font-semibold text-xl">Hollyline Master Bath</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/aetna-1st-floor-remodel" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Aetna Street Kitchen Remodel</div><div class="p-8"><h3 class="font-semibold text-xl">Aetna Street Kitchen Remodel</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/sherman-oaks-house" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Sherman Oaks House</div><div class="p-8"><h3 class="font-semibold text-xl">Sherman Oaks House</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/oxnard-master-bath" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Oxnard Master Bath</div><div class="p-8"><h3 class="font-semibold text-xl">Oxnard Master Bath</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/iglesia-master-bath" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Iglesia Master Bath</div><div class="p-8"><h3 class="font-semibold text-xl">Iglesia Master Bath</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/hesby-kitchen" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Hesby Kitchen</div><div class="p-8"><h3 class="font-semibold text-xl">Hesby Kitchen</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/leonora-house-remodel" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Leonora House Remodel</div><div class="p-8"><h3 class="font-semibold text-xl">Leonora House Remodel</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/radford-apartment" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Radford Apartment</div><div class="p-8"><h3 class="font-semibold text-xl">Radford Apartment</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/apartment-renovations" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">Apartment Renovations</div><div class="p-8"><h3 class="font-semibold text-xl">Apartment Renovations</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/reo-kitchen-gallery" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">REO Kitchen Gallery</div><div class="p-8"><h3 class="font-semibold text-xl">REO Kitchen Gallery</h3></div></a>
+        <a href="https://www.rlwdevelopmentanddesign.com/reo-bathroom-gallery" class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition-all"><div class="h-64 bg-gray-200 flex items-center justify-center text-center p-6 font-medium">REO Bathroom Gallery</div><div class="p-8"><h3 class="font-semibold text-xl">REO Bathroom Gallery</h3></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="py-24 bg-black text-white text-center">
     <div class="max-w-md mx-auto px-6">
       <h2 class="text-5xl font-bold mb-8">Contact Us</h2>
-      <form action="https://formspree.io/f/xaqzranj" method="POST" class="space-y-6">
+      <form action="https://formspree.io/f/mlgkqawn" method="POST" class="space-y-6">
         <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded bg-white/10 border border-white/30 text-white">
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded bg-white/10 border border-white/30 text-white">
         <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-4 rounded bg-white/10 border border-white/30 text-white"></textarea>
@@ -63,6 +124,10 @@
       </form>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#78350F] text-[#FFFBEB] py-12 text-center text-sm">
+    <p>© 2026 RLW Development and Design. Licensed General Contractor. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
-     
