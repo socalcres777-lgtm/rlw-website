@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RLW Development and Design</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .card-title { font-family: 'Playfair Display', serif; }
+  </style>
 </head>
-<body class="bg-[#FFFBEB] text-[#78350F]">
+<body class="bg-black text-white">
   <nav class="bg-black text-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <div class="flex items-center gap-3">
@@ -23,31 +28,58 @@
     </div>
   </nav>
 
-  <section class="h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('https://picsum.photos/id/1015/2000/1200')">
-    <div class="absolute inset-0 bg-black/60"></div>
-    <div class="relative text-center text-white max-w-4xl px-6">
-      <h1 class="text-6xl font-bold mb-6">Transforming Homes.<br><span class="text-[#CA8A04]">Elevating Lives.</span></h1>
-      <p class="text-2xl mb-10">Premium residential renovations in Southern California</p>
-      <a href="#projects" class="bg-[#CA8A04] text-black px-10 py-4 rounded font-semibold text-xl">View Projects</a>
-    </div>
-  </section>
-
-  <section id="projects" class="py-24 bg-black text-white">
+  <section id="projects" class="py-24">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-5xl font-bold text-center mb-16 text-[#CA8A04]">Recent Projects</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="https://www.rlwdevelopmentanddesign.com/" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Topanga 1st Floor Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/hollyline-master-bath" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Hollyline Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/aetna-1st-floor-remodel" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Aetna Street Kitchen Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/sherman-oaks-house" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Sherman Oaks House</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/oxnard-master-bath" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Oxnard Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/iglesia-master-bath" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Iglesia Master Bath</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/hesby-kitchen" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Hesby Kitchen</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/leonora-house-remodel" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Leonora House Remodel</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/radford-apartment" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Radford Apartment</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/apartment-renovations" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">Apartment Renovations</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/reo-kitchen-gallery" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">REO Kitchen Gallery</a>
-        <a href="https://www.rlwdevelopmentanddesign.com/reo-bathroom-gallery" class="block bg-white text-[#78350F] p-8 rounded-3xl shadow text-center">REO Bathroom Gallery</a>
+        <a href="https://www.rlwdevelopmentanddesign.com/" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_a809c8f7e3824f42aa5182eebb3e7b7e~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Topanga 1st Floor Remodel</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/hollyline-master-bath" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_d593255855ea4d549c0bfcbcc2da02e0~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Hollyline Master Bath</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/aetna-1st-floor-remodel" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_9da5c3176c9e45ebbe480b89270321cc~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Aetna Street Kitchen Remodel</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/sherman-oaks-house" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_b46fd5e6f311424c80d1a5dc9dccf4ea~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Sherman Oaks House</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/oxnard-master-bath" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_0f2a1e0e0e0a4a4a9b0b0b0b0b0b0b0b~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Oxnard Master Bath</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/iglesia-master-bath" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_1a2b3c4d5e6f7g8h9i0j~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Iglesia Master Bath</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/hesby-kitchen" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_2b3c4d5e6f7g8h9i0j1k~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Hesby Kitchen</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/leonora-house-remodel" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_3c4d5e6f7g8h9i0j1k2l~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Leonora House Remodel</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/radford-apartment" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_4d5e6f7g8h9i0j1k2l3m~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Radford Apartment</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/apartment-renovations" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_5e6f7g8h9i0j1k2l3m4n~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">Apartment Renovations</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/reo-kitchen-gallery" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_6f7g8h9i0j1k2l3m4n5o~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">REO Kitchen Gallery</div>
+        </a>
+        <a href="https://www.rlwdevelopmentanddesign.com/reo-bathroom-gallery" class="block bg-[#1F1F1F] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+          <img src="https://static.wixstatic.com/media/90a441_7g8h9i0j1k2l3m4n5o6p~mv2.jpg" class="w-full h-64 object-cover">
+          <div class="p-8 text-center card-title">REO Bathroom Gallery</div>
+        </a>
       </div>
     </div>
   </section>
